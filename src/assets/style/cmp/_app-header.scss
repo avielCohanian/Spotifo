@@ -1,0 +1,192 @@
+.app-header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 16px;
+  height: 54px;
+  width: 100%;
+  background-color: #00000080;
+  transition: all 0.5s;
+  &.scroll {
+    background-color: #00000000;
+    transition: all 1s;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .nav-icon {
+    img {
+      stroke: #0000;
+      vertical-align: middle;
+      height: 100px;
+      width: 140px;
+    }
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    .search {
+      background: none;
+      margin: 0px;
+      padding: 0px 16px;
+      border: none;
+      vertical-align: middle;
+      fill: #fff;
+      color: #fff;
+      width: 56px;
+      height: 56px;
+    }
+    .menu-sharp {
+      width: 40px;
+      height: 40px;
+      color: #fff;
+      margin-inline-start: 16px;
+    }
+  }
+
+  .search-container-mob {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #535353;
+    transition: background-color 0.2s ease 0s;
+    .icon {
+      background: #0000;
+      transition: background-color 0.2s ease 0s;
+      touch-action: manipulation;
+      color: #fff;
+      width: 24px;
+      height: 24px;
+      font-size: 20px;
+    }
+    .cancel {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 2%;
+    }
+    input {
+      width: 80%;
+      height: 100%;
+      background-color: #0000;
+      border: 0px;
+      color: #fff;
+      font-size: 16px;
+      padding: 0px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .arrow-icon {
+      position: absolute;
+      transition: background-color 0.2s ease 0s;
+      touch-action: manipulation;
+      left: 2%;
+    }
+  }
+}
+
+.search {
+  padding: 0;
+}
+
+.web {
+  display: none;
+}
+
+@media screen and (min-width: $break-narrow) {
+  .app-header {
+    padding: 0 20px;
+    height: 64px;
+    width: calc(100% - 185px);
+    margin-inline-start: 185px;
+
+    .search-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      input {
+        border: 0;
+        border-radius: 500px;
+        color: #000;
+        height: 40px;
+        padding: 6px 48px;
+        text-overflow: ellipsis;
+        width: calc(100% + 60px);
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: none;
+        outline: none;
+      }
+      .search {
+        position: absolute;
+        right: 15px;
+        height: 24px;
+        width: 24px;
+        fill: $clr1;
+      }
+    }
+
+    .links {
+      position: relative;
+      & > * {
+        padding-inline-end: 20px;
+      }
+      .arrow-container {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        margin-left: 16px;
+        align-items: center;
+        background-color: #000000b3;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        &.home {
+          cursor: pointer;
+          .arrow-forward {
+            fill: #8d8d8d;
+          }
+        }
+        .arrow-forward {
+          position: absolute;
+          height: 22px;
+          width: 22px;
+          stroke-width: 1pt;
+          fill: #fff;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    &.home {
+      .arrow-container {
+        cursor: pointer;
+
+        .arrow-forward {
+          fill: #8d8d8d;
+        }
+      }
+    }
+  }
+  .web {
+    display: flex;
+  }
+  .mob {
+    display: none;
+  }
+}

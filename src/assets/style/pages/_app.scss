@@ -1,0 +1,47 @@
+.App {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    'header header header '
+    'app app app '
+    'footer footer footer';
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  background-color: $clr1;
+  .app-header {
+    grid-area: header;
+  }
+  .side-nav {
+    grid-area: navBar;
+  }
+  .app-container {
+    grid-area: app;
+    min-height: 100vh;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
+
+@media screen and (min-width: $break-narrow) {
+  .App {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+      'navBar header header '
+      'navBar app app '
+      'footer footer footer';
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    background-color: $clr1;
+    .app-container {
+      // margin-block-end: 100px;
+    }
+  }
+}

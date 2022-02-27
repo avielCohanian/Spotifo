@@ -1,0 +1,44 @@
+.item-app {
+  position: relative;
+  .color {
+    background-color: #535353;
+    background-image: linear-gradient(#0009 0, #121212 100%);
+    height: 332px;
+    margin-top: -64px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    transition: all 1s ease;
+  }
+
+  .playlists-container {
+    // position: relative;
+    // grid-gap: 24px;
+    // display: grid;
+    // margin: 0;
+    // max-width: 1955px;
+    // padding: 24px 16px 0;
+    // isolation: isolate;
+    // padding-top: 80px;
+
+    height: 100%;
+    width: 100%;
+    padding-top: 56px;
+    background-image: linear-gradient(150deg, #901808cc 20px, #0000 220px);
+  }
+}
+
+@media screen and (min-width: $break-narrow) {
+  .item-app {
+    .playlists-container {
+      position: relative;
+      grid-gap: 24px;
+      display: grid;
+      margin: 0;
+      max-width: 1955px;
+      padding: 24px 16px 0;
+      isolation: isolate;
+      padding-top: 80px;
+    }
+  }
+}
