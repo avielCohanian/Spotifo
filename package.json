@@ -1,58 +1,26 @@
 {
-  "name": "basic-react",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "http://avielCohanian.github.io/spotifo",
-  "dependencies": {
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
-    "@mui/icons-material": "^5.3.1",
-    "@mui/material": "^5.4.0",
-    "@mui/styled-engine-sc": "^5.3.0",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.25.0",
-    "gh-pages": "^3.2.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-google-login": "^5.2.2",
-    "react-moment": "^1.1.1",
-    "react-redux": "^7.2.6",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "5.0.0",
-    "react-youtube": "^7.14.0",
-    "redux": "^4.1.2",
-    "redux-thunk": "^2.4.1",
-    "sass": "^1.45.1",
-    "styled-components": "^5.3.3",
-    "web-vitals": "^2.1.3"
-  },
+  "name": "server",
+  "version": "1.0.0",
+  "description": "production ready server",
+  "main": "server.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "buildB": "react-scripts build --dest ../backend/public",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server.js",
+    "server:dev": "set NODE_ENV=development&&nodemon server.js",
+    "server:prod": "set NODE_ENV=production&&node server.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "express-socket.io-session": "^1.3.5",
+    "heroku": "^7.59.2",
+    "mongodb": "^3.2.7",
+    "socket.io": "^4.2.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "nodemon": "1.18.10"
   }
 }
