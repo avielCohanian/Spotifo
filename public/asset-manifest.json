@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bb742978.css",
+    "main.js": "/static/js/main.bf3cdbf0.js",
+    "static/js/787.529d9457.chunk.js": "/static/js/787.529d9457.chunk.js",
+    "static/media/bcg2.jpg": "/static/media/bcg2.b361ab7fa5b141a14d2e.jpg",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.be9ee23c0c6390141475.ttf",
+    "static/media/CircularStd-Black.otf": "/static/media/CircularStd-Black.757b8ac8efa71be3fcd0.otf",
+    "static/media/CircularStd-Medium.otf": "/static/media/CircularStd-Medium.9ffafeddf192e8c8a111.otf",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.491974d108fe4002b2aa.ttf",
+    "static/media/music.png": "/static/media/music.36f790b86e1f2ed7dcc1.png",
+    "static/media/SpotifyLogo.svg": "/static/media/SpotifyLogo.8c9ecb10911cfbfe47d27c4a056e54f4.svg",
+    "static/media/Library.svg": "/static/media/Library.1dd1d54e6e0bfc843945b2fc1b00ce98.svg",
+    "static/media/home.svg": "/static/media/home.e58166fb2b46cf5ff7928f19de7b895f.svg",
+    "index.html": "/index.html",
+    "main.bb742978.css.map": "/static/css/main.bb742978.css.map",
+    "main.bf3cdbf0.js.map": "/static/js/main.bf3cdbf0.js.map",
+    "787.529d9457.chunk.js.map": "/static/js/787.529d9457.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb742978.css",
+    "static/js/main.bf3cdbf0.js"
+  ]
+}
